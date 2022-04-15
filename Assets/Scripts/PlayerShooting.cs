@@ -1,7 +1,6 @@
 using UnityEngine;
 
-
-public class PlayerShooting2 : MonoBehaviour
+public class PlayerShooting : MonoBehaviour
 {
     [SerializeField] private GameObject bulletPrefab;
 
@@ -26,5 +25,4 @@ public class PlayerShooting2 : MonoBehaviour
     {
         Instantiate(bulletPrefab, transform.position, transform.rotation);
     }
-
 }
