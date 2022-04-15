@@ -1,19 +1,30 @@
 using UnityEngine;
 
-public class PlayerShooting : MonoBehaviour
+
+public class PlayerShooting2 : MonoBehaviour
 {
     [SerializeField] private GameObject bulletPrefab;
 
-    private readonly float shootRate = 0.2f;
-    private readonly float firstShootDelay = 1f;
+    private float shootDelay = 0.5f;
+    private float currentShootRate = 0.5f;
 
-    private void Start()
+
+    private void FixedUpdate()
     {
-        InvokeRepeating(nameof(SpawnBullet), firstShootDelay, shootRate);
+        if (shootDelay < 0f)
+        {
+            SpawnBullet();
+            shootDelay = currentShootRate;
+        }
+        else
+        {
+            shootDelay -= Time.deltaTime;
+        }
     }
 
     private void SpawnBullet()
     {
         Instantiate(bulletPrefab, transform.position, transform.rotation);
     }
+
 }
