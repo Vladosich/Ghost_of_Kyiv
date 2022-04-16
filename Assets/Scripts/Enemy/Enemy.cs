@@ -20,7 +20,15 @@ public abstract class Enemy : MonoBehaviour
     {
         if(healthPoints <= 0)
         {
+            SpawnManager spawnManagerScript = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
+
             Destroy(gameObject);
+            spawnManagerScript.EnemyDestroyCounter++;
+
+            if (spawnManagerScript.EnemyDestroyCounter % 3 == 0)
+            {
+                spawnManagerScript.SpawnUpgrade(gameObject.transform.position);
+            }
         }
     }
 }

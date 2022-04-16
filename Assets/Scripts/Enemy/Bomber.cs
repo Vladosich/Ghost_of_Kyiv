@@ -13,6 +13,11 @@ public class Bomber : Enemy
 
     private void FixedUpdate()
     {
+        MoveBomber();
+    }
+
+    private void MoveBomber()
+    {
         transform.Translate(moveDirection);
     }
 }
