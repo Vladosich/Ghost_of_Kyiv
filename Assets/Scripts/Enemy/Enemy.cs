@@ -25,7 +25,7 @@ public abstract class Enemy : MonoBehaviour
             Destroy(gameObject);
             spawnManagerScript.EnemyDestroyCounter++;
 
-            if (spawnManagerScript.EnemyDestroyCounter % 3 == 0)
+            if (spawnManagerScript.EnemyDestroyCounter % 1 == 0)
             {
                 spawnManagerScript.SpawnUpgrade(gameObject.transform.position);
             }
