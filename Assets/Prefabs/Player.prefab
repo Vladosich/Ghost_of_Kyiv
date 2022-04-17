@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1599236856}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -145,7 +145,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1582410491691982744}
-  - component: {fileID: 1424085071750201506}
+  - component: {fileID: 1318503597970900537}
   m_Layer: 0
   m_Name: FirePoint
   m_TagString: Untagged
@@ -167,7 +167,7 @@ Transform:
   m_Father: {fileID: 4335931578949070366}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1424085071750201506
+--- !u!114 &1318503597970900537
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
