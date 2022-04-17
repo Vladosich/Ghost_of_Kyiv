@@ -1,7 +1,7 @@
 using UnityEngine;
 
 
-public class PlayerShooting2 : MonoBehaviour
+public class PlayerShooting : MonoBehaviour
 {
     [SerializeField] private GameObject bulletPrefab;
 
