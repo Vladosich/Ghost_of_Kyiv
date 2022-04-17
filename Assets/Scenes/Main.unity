@@ -584,6 +584,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e927c4e197cabc246b167dc01b619e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &863524630 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1619030658851352439, guid: ffa5ac91a00dee9429e7243496cb9f5c, type: 3}
+  m_PrefabInstance: {fileID: 1424085071750201504}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1090242261
 GameObject:
   m_ObjectHideFlags: 0
@@ -1064,6 +1069,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2132086851 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 966080166342273478, guid: ffa5ac91a00dee9429e7243496cb9f5c, type: 3}
+  m_PrefabInstance: {fileID: 1424085071750201504}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1424085071750201504
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1071,17 +1081,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -7277848005915290698, guid: ffa5ac91a00dee9429e7243496cb9f5c, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 267364043125060470, guid: ffa5ac91a00dee9429e7243496cb9f5c, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 267364043125060470, guid: ffa5ac91a00dee9429e7243496cb9f5c, type: 3}
-      propertyPath: m_TagString
-      value: Player
+    - target: {fileID: 532804822402842866, guid: ffa5ac91a00dee9429e7243496cb9f5c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 966080166342273478, guid: ffa5ac91a00dee9429e7243496cb9f5c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619030658851352439, guid: ffa5ac91a00dee9429e7243496cb9f5c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4335931578949070366, guid: ffa5ac91a00dee9429e7243496cb9f5c, type: 3}
       propertyPath: m_RootOrder
@@ -1135,16 +1149,3 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 532804822402842866, guid: ffa5ac91a00dee9429e7243496cb9f5c, type: 3}
   m_PrefabInstance: {fileID: 1424085071750201504}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1424085071750201506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1424085071750201505}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e75c5150d82a8c3458eb0aca491dd8c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 8263862254949976934, guid: b8d6db750e222434291e50d83e2e7ddd, type: 3}
