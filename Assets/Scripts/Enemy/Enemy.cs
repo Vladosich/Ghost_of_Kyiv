@@ -9,6 +9,11 @@ public abstract class Enemy : MonoBehaviour
     {
         TakeDamage(bulletDamage);
         DestroyIfDead(healthPoints);
+
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
     }
 
     protected void TakeDamage(float damage)
