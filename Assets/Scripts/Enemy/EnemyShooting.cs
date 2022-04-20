@@ -7,14 +7,15 @@ public class EnemyShooting : MonoBehaviour
     private Transform player;
     [SerializeField] Transform shootDirection;
 
-    private float shootDelay = 2f;
-    private float currentShootRate = 2f;
+    private float shootDelay;
 
     private float rotationOffset = 90f;
 
     private void Start()
     {
         player = GameObject.Find("Player").GetComponent<Transform>();
+
+        shootDelay = Random.Range(0f, 5f);
     }
 
     private void Update()
@@ -29,7 +30,7 @@ public class EnemyShooting : MonoBehaviour
         if (shootDelay < 0f)
         {
             SpawnEnemyBullet();
-            shootDelay = currentShootRate;
+            shootDelay = RandomShootRate();
         }
         else
         {
@@ -40,6 +41,13 @@ public class EnemyShooting : MonoBehaviour
     private void SpawnEnemyBullet()
     {
         Instantiate(enemyBulletPrefab, shootDirection.position, transform.rotation);
+    }
+
+    private float RandomShootRate()
+    {
+        float minShootRate = 3f;
+        float maxShootRate = 10f;
+        return Random.Range(minShootRate, maxShootRate);
     }
 
    
