@@ -14,6 +14,7 @@ public class PlayerHealth : MonoBehaviour
         if(collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("EnemyBullet"))
         {
             playerHealth--;
+            Debug.Log("Player health: " + playerHealth);
         }
     }
 }

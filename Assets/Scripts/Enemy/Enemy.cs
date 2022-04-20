@@ -7,13 +7,17 @@ public abstract class Enemy : MonoBehaviour
 
     protected void OnTriggerEnter2D(Collider2D collision)
     {
-        TakeDamage(bulletDamage);
-        DestroyIfDead(healthPoints);
-
         if (collision.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
         }
+
+        if (collision.gameObject.CompareTag("Bullet"))
+        {
+            TakeDamage(bulletDamage);
+        }
+
+        DestroyIfDead(healthPoints);
     }
 
     protected void TakeDamage(float damage)
